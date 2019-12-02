@@ -1,0 +1,98 @@
+<html>
+<head>
+    <style>
+        body{
+            background-image: linear-gradient(to top left,#cc7752,#c73c7e,#23a6d5,#23d5ab);
+        }
+        @font-face{
+            font-family: serif;
+            src:url(webfontkit/serif-webfont.woff)
+        }
+        .title{
+            color:white;
+            text-align: center;
+            text-shadow: 0px 9px 0 black;
+            font-size:92px;
+            letter-spacing: 2.4px;
+            margin-top: 50px;
+        }
+        .text{
+            font-size:24px;
+            font-family: serif;
+            line-height: 30px;
+            padding-left: 30px;
+            padding:25px 30px 0px 30px;
+            color:green;
+        }
+        .symbol{
+            font-size:60px;
+        }
+        .parttwo{
+            background:white;
+            margin:0 auto;
+            width:618px;
+            height:195px;
+        }
+        .partthree{
+            margin:0 auto;
+            width:1155px;
+            height:235px;
+            margin-top:122px;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .divall{
+            width:321px;
+            height:215px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            border:10px cornsilk solid;
+        }
+        .div1{
+            background-image: url(./image/empire-state.png);
+            position:relative;
+            z-index: 1; 
+        }
+        .div2{
+            background-image: url(./image/liberty.png);
+        }
+        .div3{
+            background-image: url(./image/midtown.png);
+        }
+        .text1{
+            position:absolute;
+            opacity: 0;
+            width:321px;
+            height:215px;
+            z-index: 9;
+            color:white;
+            background-color: rgba(58, 1, 132, 0.44);
+            border:10px cornsilk solid;
+        }
+        .text1:hover{
+            opacity: 1;
+        }
+        .partthree.text1 span{
+            text-align: center;
+            font-family: "Merriweather";
+            font-size:30px;
+        }
+    </style>
+</head>
+<body>
+        <p class="title">CSS3 实战练习</p>
+        <div class="parttwo">
+            <p class="text"> <span class="symbol">“</span>Dream what you want to dream;go where you want to go;be what you want to be, because you have only one life and one chance to do all the things you want to do.</p>
+        </div>
+        <div class="partthree">
+            <div class="div1 divall"></div>
+                <div class="text1"><span >EMPIRE STATE</span></div>
+                    
+            <div class="div2 divall"></div>
+                <div class="mask1"></div>
+            <div class="div3 divall"></div>
+                <div class="mask1"></div>
+        </div>
+</body>
+</html>
