@@ -11,7 +11,7 @@
         .title{
             color:white;
             text-align: center;
-            text-shadow: 0px 9px 0 black;
+            text-shadow: 0 4px #000,0 6px #000, 0 8px #000, 0 10px #000, 0 12px 0px #000, 0 14px 15px #000; 
             font-size:92px;
             letter-spacing: 2.4px;
             margin-top: 50px;
@@ -41,6 +41,7 @@
             display:flex;
             justify-content: space-between;
             align-items: center;
+            position:relative;
         }
         .divall{
             width:321px;
@@ -51,7 +52,6 @@
         }
         .div1{
             background-image: url(./image/empire-state.png);
-            position:relative;
             z-index: 1; 
         }
         .div2{
@@ -60,7 +60,7 @@
         .div3{
             background-image: url(./image/midtown.png);
         }
-        .text1{
+        .textleft {
             position:absolute;
             opacity: 0;
             width:321px;
@@ -71,35 +71,88 @@
             border:10px cornsilk solid;
             text-align: center;
             padding-top: 30px;
+            font-family: "Merriweather";
         }
-        .text1:hover{
+        .textleft:hover{
             opacity: 1;
         }
-        .text1 span{
+        .textleft span{
+            font-size:18px;
+        }
+        .textleft .leftdes {
+            font-size:13px;
+        }
+        .readmore {
+            background-color: black;
+            width:120px;
+            height:28px;
+            line-height: 180%;
+            margin:0 auto;
+        }
+        .textcenter {
+            position:absolute;
+            left:407px;
+            background-color: rgba(0,0,0,0.4);
+            width:321px;
+            height:185px;
+            border:10px cornsilk solid;
+            color:white;
+            text-align: center;
+            padding-top: 30px;
+            font-family: "Merriweather";
+            opacity: 0;
+        }
+        .textcenter:hover {
+            opacity: 1;
+        }
+        .small-title {
             font-family: "Merriweather";
             font-size:18px;
         }
-        .text1 p{
+        .leftdes2 {
             font-size:13px;
+        }
+        .textright {
+            position:absolute;
+            width:321px;
+            height:185px;
+            border:10px cornsilk solid;;
+            background-color: rgba(255, 231, 179, 0.3);
+            padding-top: 30px;
+            left:814px;
+            color:white;
+            text-align: center;
+            opacity: 0;
+        }
+        .textright:hover{
+            opacity:1;
         }
     </style>
 </head>
 <body>
+    <div class="paper">
         <p class="title">CSS3 实战练习</p>
         <div class="parttwo">
             <p class="text"> <span class="symbol">“</span>Dream what you want to dream;go where you want to go;be what you want to be, because you have only one life and one chance to do all the things you want to do.</p>
         </div>
         <div class="partthree">
             <div class="div1 divall"></div>
-                <div class="text1">
+                <div class="textleft">
                     <span>EMPIRE STATE</span>
-                    <p>A cool description of some sort between these tags. I am so cool and awesomely awesome.</p>
-                </div>
-                    
+                    <p class="leftdes">A cool description of some sort between these tags. I am so cool and awesomely awesome.</p>
+                    <div class="readmore"><p>READ MORE</p></div>
+                </div>                 
             <div class="div2 divall"></div>
-                <div class="mask1" style="padding-top: 30px;"></div>
+                <div class="textcenter">
+                    <span class="small-title">MIDTOWN</span>
+                    <p class="leftdes2">A description of some sort between these tags.<br/>I am so cool and awesomely awesome.</p>
+                    <div class="readmore"><p>READ MORE</p></div>
+                </div>
             <div class="div3 divall"></div>
-                <div class="mask1"></div>
+                <div class="textright">
+                    <span class="small-title">THE ONLY LIVING BOY<br/> IN NEW YORK</span>
+                </div>
         </div>
+    </div>
 </body>
 </html>
