@@ -53,9 +53,12 @@
         .div1{
             background-image: url(./image/empire-state.png);
             z-index: 1; 
+            
         }
         .div2{
             background-image: url(./image/liberty.png);
+            overflow: hidden;
+            position:relative;
         }
         .div3{
             background-image: url(./image/midtown.png);
@@ -89,6 +92,14 @@
             line-height: 180%;
             margin:0 auto;
         }
+        .readmore3 {
+            background-color: black;
+            width:120px;
+            height:28px;
+            line-height: 180%;
+            margin:0 auto;
+            color:white;
+        }
         .textcenter {
             position:absolute;
             left:407px;
@@ -109,6 +120,9 @@
             font-family: "Merriweather";
             font-size:18px;
         }
+        hr{
+            width:200px;
+        }
         .leftdes2 {
             font-size:13px;
         }
@@ -117,15 +131,40 @@
             width:321px;
             height:185px;
             border:10px cornsilk solid;;
-            background-color: rgba(255, 231, 179, 0.3);
+            background-color: #FFF8E8;;
             padding-top: 30px;
             left:814px;
-            color:white;
             text-align: center;
             opacity: 0;
         }
         .textright:hover{
             opacity:1;
+        }
+        .partfour {
+            height:500px;
+            margin:0;
+            
+        }
+        .thirdbox {
+            position:relative;
+            background-color: #ffffff;
+            width:660px;
+            height:170px;
+            margin:122px auto;
+            column-count: 3;
+            padding:20px;
+            word-break: break-all;
+            border-radius: 5px;
+        }
+        .thirdbox::before{
+            position:absolute;
+            content:"";
+            width:0px;
+            height:0px;
+            left:50%;
+            top:-36px;
+            border: 18px solid transparent;
+            border-bottom-color: #ffffff;
         }
     </style>
 </head>
@@ -151,7 +190,26 @@
             <div class="div3 divall"></div>
                 <div class="textright">
                     <span class="small-title">THE ONLY LIVING BOY<br/> IN NEW YORK</span>
+                    <hr />
+                    <p class="leftdes2">Words and such,a whole lot more of muh<br/>flippin'words.</p>
+                    <div class="readmore3"><p>READ MORE</p></div>
                 </div>
+        </div>
+        <div class="partfour">
+            <div class="thirdbox">
+                <p style="margin-top: 0%;">
+                    Lorem ipsum dolor sit amet.consectetur adipisicing clit,sed do ciusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <p>
+                    Ut enim ad minim weniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                  <p>
+                    Duis aute irure dolor in reprchenderit in voluptate velit esse cilum dolore eu fugiat nulla pariatur.
+                  </p>
+                  <p>
+                    Excepteur sint occaecat cupidatat non proident,suntin culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+            </div>
         </div>
     </div>
 </body>
