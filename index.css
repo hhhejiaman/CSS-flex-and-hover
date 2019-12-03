@@ -1,0 +1,167 @@
+body{
+    background-image: linear-gradient(to top left,#cc7752,#c73c7e,#23a6d5,#23d5ab);
+}
+.title{
+    color:white;
+    text-align: center;
+    text-shadow: 0 4px #000,0 6px #000, 0 8px #000, 0 10px #000, 0 12px 0px #000, 0 14px 15px #000; 
+    font-size:92px;
+    letter-spacing: 2.4px;
+    margin-top: 50px;
+}
+.text{
+    font-size:24px;
+    font-family: "specialfont";
+    line-height: 30px;
+    padding-left: 30px;
+    padding:25px 30px 0px 30px;
+    color:green;
+    line-height: 150%;
+}
+.symbol{
+    font-size:60px;
+}
+.parttwo{
+    background:white;
+    margin:0 auto;
+    width:618px;
+    height:195px;
+    border-radius: 5px;
+}
+.partthree{
+    margin:0 auto;
+    width:1155px;
+    height:235px;
+    margin-top:122px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+}
+.divall{
+    width:321px;
+    height:215px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border:10px cornsilk solid;
+}
+.div1{
+    background-image: url(./statics/image/empire-state.png);
+    z-index: 1; 
+    
+}
+.div2{
+    background-image: url(./statics/image/liberty.png);
+    overflow: hidden;
+    position:relative;
+}
+.div3{
+    background-image: url(./statics/image/midtown.png);
+}
+.textleft {
+    position:absolute;
+    opacity: 0;
+    width:321px;
+    height:185px;
+    z-index: 9;
+    color:white;
+    background-color: rgba(58, 1, 132, 0.44);
+    border:10px cornsilk solid;
+    text-align: center;
+    padding-top: 30px;
+    font-family: "merriweather";
+}
+.textleft:hover{
+    opacity: 1;
+}
+.textleft span{
+    font-size:18px;
+}
+.textleft .leftdes {
+    font-size:13px;
+}
+.readmore {
+    background-color: black;
+    width:120px;
+    height:28px;
+    line-height: 180%;
+    margin:0 auto;
+}
+.readmore3 {
+    background-color: black;
+    width:120px;
+    height:28px;
+    line-height: 180%;
+    margin:0 auto;
+    color:white;
+    font-family: "merriweather";
+}
+.textcenter {
+    position:absolute;
+    left:407px;
+    background-color: rgba(0,0,0,0.4);
+    width:321px;
+    height:185px;
+    border:10px cornsilk solid;
+    color:white;
+    text-align: center;
+    padding-top: 30px;
+    font-family: "merriweather";
+    opacity: 0;
+}
+.textcenter:hover {
+    opacity: 1;
+}
+.small-title {
+    font-family: "merriweather";
+    font-size:18px;
+}
+hr{
+    width:200px;
+}
+.leftdes2 {
+    font-size:13px;
+    font-family: "merriweather";
+}
+.textright {
+    position:absolute;
+    width:321px;
+    height:185px;
+    border:10px cornsilk solid;;
+    background-color: #FFF8E8;;
+    padding-top: 30px;
+    left:814px;
+    text-align: center;
+    opacity: 0;
+}
+.textright:hover{
+    opacity:1;
+}
+.partfour {
+    height:500px;
+    margin:0;
+    
+}
+.thirdbox {
+    position:relative;
+    background-color: #ffffff;
+    width:660px;
+    height:170px;
+    margin:122px auto;
+    column-count: 3;
+    padding:20px;
+    word-break: break-all;
+    border-radius: 5px;
+    font-family: "serif";
+    line-height: 150%;
+}
+.thirdbox::before{
+    position:absolute;
+    content:"";
+    width:0px;
+    height:0px;
+    left:50%;
+    top:-36px;
+    border: 18px solid transparent;
+    border-bottom-color: #ffffff;
+}
