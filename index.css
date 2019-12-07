@@ -1,181 +1,211 @@
-body{
-    background-image: linear-gradient(to top left,#cc7752,#c73c7e,#23a6d5,#23d5ab);
+body {
+    background-image: linear-gradient(to top left, #cc7752, #c73c7e, #23a6d5, #23d5ab);
 }
-.title{
-    color:white;
+
+.title {
+    color: white;
     text-align: center;
-    text-shadow: 0 4px #000,0 6px #000, 0 8px #000, 0 10px #000, 0 12px 0px #000, 0 14px 15px #000; 
-    font-size:92px;
+    text-shadow: 0 4px #000, 0 6px #000, 0 8px #000, 0 10px #000, 0 12px 0px #000, 0 14px 15px #000;
+    font-size: 92px;
     letter-spacing: 2.4px;
     margin-top: 50px;
 }
-.text{
-    font-size:24px;
-    font-family: "specialfont";
+
+.text-proverb {
+    font-size: 24px;
+    font-family: "specialfont", "serif";
     line-height: 30px;
     padding-left: 30px;
-    padding:25px 30px 0px 30px;
-    color:green;
+    padding: 25px 30px 0px 30px;
+    color: green;
     line-height: 150%;
 }
-.symbol{
-    font-size:60px;
+
+.symbol {
+    font-size: 60px;
 }
-.parttwo{
-    background:white;
-    margin:0 auto;
-    width:618px;
-    height:195px;
+
+.proverb {
+    background: white;
+    margin: 0 auto;
+    width: 618px;
+    height: 195px;
     border-radius: 5px;
 }
-.partthree{
-    margin:0 auto;
-    width:1155px;
-    height:235px;
-    margin-top:122px;
-    display:flex;
+
+.sightseeing {
+    margin: 0 auto;
+    width: 1155px;
+    height: 235px;
+    margin-top: 122px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    position:relative;
+    position: relative;
 }
-.divall{
-    width:321px;
-    height:215px;
+
+.divall {
+    width: 321px;
+    height: 215px;
     background-size: 100%;
     background-repeat: no-repeat;
-    border:10px cornsilk solid;
+    border: 10px cornsilk solid;
 }
+
 .div-empire {
     background-image: url(./statics/image/empire-state.png);
-    z-index: 1; 
-    
+    z-index: 1;
 }
+
 .div-mid {
     background-image: url(./statics/image/midtown.png);
     overflow: hidden;
-    position:relative;
+    position: relative;
 }
+
 .div-york {
     background-image: url(./statics/image/liberty.png);
 }
-.textleft {
-    position:absolute;
+
+.text-empire {
+    position: absolute;
     opacity: 0;
-    width:321px;
-    height:185px;
+    width: 321px;
+    height: 210px;
     z-index: 9;
-    color:white;
+    color: white;
     background-color: rgba(58, 1, 132, 0.44);
-    border:10px cornsilk solid;
+    border: 10px cornsilk solid;
     text-align: center;
-    padding-top: 30px;
-    font-family: "merriweather";
+    padding-top: 5px;
+    font-family: "merriweather", "serif";
 }
-.textleft:hover{
+
+.text-empire:hover {
     opacity: 1;
 }
-.textleft span{
-    font-size:18px;
+
+.text-empire span {
+    font-size: 18px;
 }
-.textleft .leftdes {
-    font-size:13px;
+
+.text-empire .des-empire {
+    font-size: 13px;
 }
+
 .readmore {
     background-color: black;
-    width:120px;
-    height:28px;
+    width: 120px;
+    height: 28px;
     line-height: 180%;
-    margin:0 auto;
+    margin: 0 auto;
+    font-family: "merriweather", "serif";
 }
-.readmore3 {
+
+.readmore-york {
     background-color: black;
-    width:120px;
-    height:28px;
+    width: 120px;
+    height: 28px;
     line-height: 180%;
-    margin:0 auto;
-    color:white;
-    font-family: "merriweather";
+    margin: 0 auto;
+    color: white;
+    font-family: "merriweather", "serif";
 }
-.textcenter {
-    position:absolute;
-    left:407px;
+
+.text-mid {
+    position: absolute;
+    left: 407px;
     /* background-color: rgba(0,0,0,0.4); */
-    width:321px;
-    height:185px;
-    border:10px cornsilk solid;
-    color:white;
+    width: 321px;
+    height: 210px;
+    border: 10px cornsilk solid;
+    color: white;
     text-align: center;
-    padding-top: 30px;
-    font-family: "merriweather";
+    padding-top: 5px;
+    font-family: "merriweather"."serif";
     opacity: 0;
     overflow: hidden;
 }
+
 .mask {
-    position:absolute;
-    background-color: rgba(0,0,0,0.4);
-    width:330px;
-    height:185px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 330px;
+    height: 185px;
     top: -130px;
     left: -130px;
     transform: rotate(45deg);
-    display:none;
+    display: none;
 }
-.textcenter:hover .mask {
-    display :block;
+
+.text-mid:hover .mask {
+    display: block;
 }
-.textcenter:hover {
+
+.text-mid:hover {
     opacity: 1;
 }
+
 .small-title {
-    font-family: "merriweather";
-    font-size:18px;
+    font-family: "merriweather", "serif";
+    /* font-size: 18px; */
 }
-hr{
-    width:200px;
+
+hr {
+    width: 200px;
 }
-.leftdes2 {
-    font-size:13px;
-    font-family: "merriweather";
+
+.des-all {
+    font-size: 13px;
+    font-family: "merriweather", "serif";
 }
-.textright {
-    position:absolute;
-    width:321px;
-    height:185px;
-    border:10px cornsilk solid;;
-    background-color: #FFF8E8;;
-    padding-top: 30px;
-    left:814px;
+
+.text-york {
+    position: absolute;
+    width: 321px;
+    height: 210px;
+    border: 10px cornsilk solid;
+    background-color: #FFF8E8;
+    padding-top: 5px;
+    left: 814px;
     text-align: center;
     opacity: 0;
 }
-.textright:hover{
-    opacity:1;
+
+.text-york:hover {
+    opacity: 1;
 }
-.partfour {
-    height:500px;
-    margin:0;
-    
+
+.article {
+    height: 500px;
+    margin: 0;
 }
-.thirdbox {
-    position:relative;
+
+.multi-column-article {
+    position: relative;
     background-color: #ffffff;
-    width:660px;
-    height:170px;
-    margin:122px auto;
+    width: 660px;
+    height: 170px;
+    margin: 122px auto;
     column-count: 3;
-    padding:20px;
+    padding: 20px;
     word-break: break-all;
     border-radius: 5px;
     font-family: "serif";
     line-height: 150%;
 }
-.thirdbox::before{
-    position:absolute;
-    content:"";
-    width:0px;
-    height:0px;
-    left:50%;
-    top:-36px;
+
+.multi-column-article:before {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    left: 50%;
+    top: -36px;
     border: 18px solid transparent;
     border-bottom-color: #ffffff;
+}
+
+.article-header {
+    margin-top: 0;
 }
